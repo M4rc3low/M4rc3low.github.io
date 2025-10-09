@@ -1,34 +1,6 @@
 # M4rc3low.github.io
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Marcelo • Portfólio</title>
-  <meta name="description" content="Portfólio de Marcelo – ADS, IA, Engenharia de Software, Cloud, Big Data, ABAP e Linux." />
-  <meta name="theme-color" content="#0ea5e9" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <style>
-    html { scroll-behavior: smooth; }
-    .glass { backdrop-filter: blur(10px); background: rgba(255,255,255,0.7); }
-    .dark .glass { background: rgba(15,23,42,0.6); }
-  </style>
-  <!-- SEO / Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Marcelo",
-    "jobTitle": "Estudante de ADS e Tecnologia em IA",
-    "sameAs": [
-      "https://github.com/M4rc3low",
-      "[https://www.linkedin.com/in/marcelo-s-gomes-019792389/)
-    ],
-    "url": "https://M4rc3low.github.io"
-  }
-  </script>
-</head>
-<body class="min-h-screen bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100">
+   <body class="min-h-screen bg-slate-50 text-slate-800 dark:bg-slate-900 dark:text-slate-100">
   <!-- Topbar -->
   <header class="sticky top-0 z-50 border-b border-slate-200 dark:border-slate-800 bg-white/70 dark:bg-slate-900/60 glass">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
@@ -126,78 +98,8 @@
   </section>
 
   <!-- Projetos -->
-  <section id="projetos" class="py-16 border-t border-slate-200 dark:border-slate-800">
-    <div class="max-w-6xl mx-auto px-4">
-      <div class="flex items-end justify-between gap-4">
-        <h2 class="text-2xl font-bold">Projetos em Destaque</h2>
-        <a target="_blank" rel="noopener" href="https://github.com/SEU_USUARIO" class="text-sm underline underline-offset-4 hover:text-sky-600">Ver GitHub →</a>
-      </div>
-
-      <div class="mt-6 grid md:grid-cols-2 xl:grid-cols-3 gap-6">
-        <!-- Card 1 -->
-        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 hover:shadow-lg transition">
-          <h3 class="font-semibold">CRUD Java + MongoDB</h3>
-          <p class="mt-2 text-sm text-slate-600 dark:text-slate-300">Aplicativo simples em Java SE com persistência em MongoDB (CRUD, camadas, boas práticas).
-          </p>
-          <ul class="mt-3 text-xs list-disc pl-5 space-y-1">
-            <li>Java, MongoDB, Maven</li>
-            <li>Arquitetura em camadas + testes</li>
-          </ul>
-          <div class="mt-4 flex gap-3">
-            <a target="_blank" rel="noopener" href="https://github.com/SEU_USUARIO/crud-java-mongodb" class="text-sm rounded-xl px-3 py-1.5 border border-slate-300 dark:border-slate-700">Código</a>
-          </div>
-        </article>
-        <!-- Card 2 -->
-        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 hover:shadow-lg transition">
-          <h3 class="font-semibold">Automação Linux – Backup & Logs</h3>
-          <p class="mt-2 text-sm">Scripts Bash para backup comprimido, limpeza de logs antigos e relatório do sistema.</p>
-          <ul class="mt-3 text-xs list-disc pl-5 space-y-1">
-            <li>Bash, cron, tar/gzip</li>
-            <li>Execução em Ubuntu/WSL e EC2</li>
-          </ul>
-          <div class="mt-4 flex gap-3">
-            <a target="_blank" rel="noopener" href="https://github.com/SEU_USUARIO/linux-automations" class="text-sm rounded-xl px-3 py-1.5 border border-slate-300 dark:border-slate-700">Código</a>
-          </div>
-        </article>
-        <!-- Card 3 -->
-        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 hover:shadow-lg transition">
-          <h3 class="font-semibold">Análise de Dados com Spark</h3>
-          <p class="mt-2 text-sm">Pipeline de leitura de CSV, limpeza e agregações em Spark; exporta relatório final.</p>
-          <ul class="mt-3 text-xs list-disc pl-5 space-y-1">
-            <li>Apache Spark, DataFrames, SparkSQL</li>
-            <li>Dataset público (vendas)</li>
-          </ul>
-          <div class="mt-4 flex gap-3">
-            <a target="_blank" rel="noopener" href="https://github.com/SEU_USUARIO/spark-analytics" class="text-sm rounded-xl px-3 py-1.5 border border-slate-300 dark:border-slate-700">Código</a>
-          </div>
-        </article>
-        <!-- Card 4 -->
-        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 hover:shadow-lg transition">
-          <h3 class="font-semibold">Modelo ML (Scikit-learn ou MLlib)</h3>
-          <p class="mt-2 text-sm">Classificador de churn com métricas de acurácia, precisão e recall, comparando modelos.</p>
-          <ul class="mt-3 text-xs list-disc pl-5 space-y-1">
-            <li>Python/Scikit-learn ou Spark MLlib</li>
-            <li>Notebook e README explicativo</li>
-          </ul>
-          <div class="mt-4 flex gap-3">
-            <a target="_blank" rel="noopener" href="https://github.com/SEU_USUARIO/ml-churn" class="text-sm rounded-xl px-3 py-1.5 border border-slate-300 dark:border-slate-700">Código</a>
-          </div>
-        </article>
-        <!-- Card 5 -->
-        <article class="rounded-2xl border border-slate-200 dark:border-slate-800 p-5 hover:shadow-lg transition">
-          <h3 class="font-semibold">ABAP – Relatório KNA1</h3>
-          <p class="mt-2 text-sm">Programa ABAP que lista clientes (KNA1) com filtros e exportação para CSV (exercício acadêmico).</p>
-          <ul class="mt-3 text-xs list-disc pl-5 space-y-1">
-            <li>ABAP básico + tabelas internas</li>
-            <li>WRITE/SELECT/LOOP AT</li>
-          </ul>
-          <div class="mt-4 flex gap-3">
-            <a target="_blank" rel="noopener" href="https://github.com/SEU_USUARIO/abap-exercicios" class="text-sm rounded-xl px-3 py-1.5 border border-slate-300 dark:border-slate-700">Código</a>
-          </div>
-        </article>
-      </div>
-    </div>
-  </section>
+  
+       
 
   <!-- Certificações -->
   <section id="certificacoes" class="py-16 border-t border-slate-200 dark:border-slate-800">
