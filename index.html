@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio profissional de Marcelo Gomes, desenvolvedor em formação com foco em aplicações web, automação, dashboards, cloud e soluções para problemas reais.">
+  <title>Marcelo Gomes | Desenvolvedor</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #111827;
+      --text: #f8fafc;
+      --muted: #cbd5e1;
+      --accent: #38bdf8;
+      --border: #334155;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(135deg, #0f172a, #111827);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(15, 23, 42, 0.92);
+      border-bottom: 1px solid var(--border);
+      backdrop-filter: blur(10px);
+    }
+    .container { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+    .nav { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; }
+    .nav a { color: var(--text); text-decoration: none; margin-left: 18px; font-size: 14px; }
+    .brand { font-weight: 700; }
+    .hero { padding: 90px 0 70px; }
+    .hero-grid { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 36px; align-items: center; }
+    .tag { color: var(--accent); font-weight: 700; text-transform: uppercase; font-size: 13px; letter-spacing: 1px; }
+    h1 { font-size: clamp(36px, 6vw, 64px); line-height: 1.05; margin: 12px 0 20px; }
+    h2 { font-size: 30px; margin: 0 0 18px; }
+    h3 { margin: 0 0 10px; }
+    p { color: var(--muted); }
+    .actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
+    .btn {
+      display: inline-block;
+      padding: 12px 18px;
+      border-radius: 14px;
+      text-decoration: none;
+      color: var(--text);
+      border: 1px solid var(--border);
+      font-weight: 700;
+    }
+    .btn.primary { background: var(--accent); color: #082f49; border-color: var(--accent); }
+    .card {
+      background: rgba(17, 24, 39, 0.82);
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 24px;
+      box-shadow: 0 20px 45px rgba(0,0,0,.25);
+    }
+    section { padding: 66px 0; border-top: 1px solid var(--border); }
+    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+    .skill { padding: 16px; border: 1px solid var(--border); border-radius: 18px; background: rgba(15, 23, 42, 0.65); }
+    .project { min-height: 280px; display: flex; flex-direction: column; justify-content: space-between; }
+    .chips { display: flex; gap: 8px; flex-wrap: wrap; margin: 18px 0; }
+    .chip { font-size: 12px; padding: 6px 10px; background: #1e293b; border-radius: 999px; color: var(--muted); }
+    footer { padding: 32px 0; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
+    @media (max-width: 850px) {
+      .hero-grid, .grid, .skills { grid-template-columns: 1fr; }
+      .nav nav { display: none; }
+      .hero { padding-top: 60px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#home">Marcelo Gomes</a>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#habilidades">Habilidades</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <div class="tag">Portfólio profissional</div>
+          <h1>Desenvolvimento web, automação e dashboards para problemas reais.</h1>
+          <p>Sou Marcelo Gomes, estudante de Análise e Desenvolvimento de Sistemas, construindo projetos práticos com foco em aplicações web, organização de dados, cloud, automação e soluções úteis para negócios e operação.</p>
+          <div class="actions">
+            <a class="btn primary" href="#projetos">Ver projetos</a>
+            <a class="btn" href="https://github.com/M4rc3low" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="https://www.linkedin.com/in/marcelo-s-gomes-019792389/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+        <aside class="card">
+          <h3>Foco atual</h3>
+          <p>Construir um portfólio forte com projetos reais, documentação clara e aplicações que demonstram capacidade prática.</p>
+          <div class="chips">
+            <span class="chip">React</span>
+            <span class="chip">Python</span>
+            <span class="chip">Dashboards</span>
+            <span class="chip">AWS</span>
+            <span class="chip">Docker</span>
+            <span class="chip">Automação</span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section id="sobre">
+      <div class="container">
+        <h2>Sobre mim</h2>
+        <p>Tenho perfil prático e gosto de aprender construindo. Meu objetivo é desenvolver sistemas úteis, bem organizados e com aplicação real. Estou evoluindo em desenvolvimento web, backend, cloud, banco de dados, APIs, automação e engenharia de software.</p>
+        <p>Meus projetos nascem de problemas reais: controle jurídico, organização territorial, dashboards, sites de negócio e ferramentas para melhorar processos do dia a dia.</p>
+      </div>
+    </section>
+
+    <section id="habilidades">
+      <div class="container">
+        <h2>Habilidades</h2>
+        <div class="skills">
+          <div class="skill"><strong>Front-end</strong><p>HTML, CSS, JavaScript, React, Vite e Tailwind CSS.</p></div>
+          <div class="skill"><strong>Automação</strong><p>Python, Playwright, scraping, scripts e organização de fluxos.</p></div>
+          <div class="skill"><strong>Dados</strong><p>Pandas, SQL, relatórios, métricas e visualização de indicadores.</p></div>
+          <div class="skill"><strong>Cloud</strong><p>AWS, fundamentos de nuvem, deploy e escalabilidade.</p></div>
+          <div class="skill"><strong>DevOps básico</strong><p>Git, GitHub, Docker, Linux e boas práticas de versionamento.</p></div>
+          <div class="skill"><strong>Produto</strong><p>Documentação, requisitos, visão de negócio e solução prática.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projetos">
+      <div class="container">
+        <h2>Projetos em destaque</h2>
+        <div class="grid">
+          <article class="card project">
+            <div>
+              <div class="tag">Jurídico e dashboard</div>
+              <h3>PeritoLex</h3>
+              <p>Aplicação web para organização, acompanhamento e análise de informações jurídicas, com foco em produtividade e controle de processos.</p>
+              <div class="chips"><span class="chip">React</span><span class="chip">Vite</span><span class="chip">Dashboard</span></div>
+            </div>
+            <a class="btn" href="https://github.com/M4rc3low/peritolex" target="_blank" rel="noopener">Abrir repositório</a>
+          </article>
+
+          <article class="card project">
+            <div>
+              <div class="tag">Mapas e operação</div>
+              <h3>GeoTerritórios</h3>
+              <p>Sistema para organizar territórios, prédios, apartamentos, áreas mapeadas e indicadores de cobertura.</p>
+              <div class="chips"><span class="chip">React</span><span class="chip">Mapas</span><span class="chip">Geodados</span></div>
+            </div>
+            <a class="btn" href="https://github.com/M4rc3low/geoterritorios_marcelo" target="_blank" rel="noopener">Abrir repositório</a>
+          </article>
+
+          <article class="card project">
+            <div>
+              <div class="tag">Negócio real</div>
+              <h3>AMM Materiais de Construção</h3>
+              <p>Projeto web para presença digital de uma loja de materiais de construção, com foco em catálogo, contato e apresentação profissional.</p>
+              <div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div>
+            </div>
+            <a class="btn" href="https://github.com/M4rc3low/amm-materiais-construcao" target="_blank" rel="noopener">Abrir repositório</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="container">
+        <h2>Contato</h2>
+        <p>Aberto a oportunidades, networking, freelas e projetos práticos.</p>
+        <div class="actions">
+          <a class="btn primary" href="mailto:mg.anjos1991@gmail.com">Enviar e-mail</a>
+          <a class="btn" href="https://github.com/M4rc3low" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="https://www.linkedin.com/in/marcelo-s-gomes-019792389/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">© 2026 Marcelo Gomes. Portfólio publicado com GitHub Pages.</div>
+  </footer>
+</body>
+</html>
