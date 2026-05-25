@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Projetos de Marcelo Gomes em desenvolvimento web, automação, dashboards, geodados e soluções para negócios reais.">
+  <title>Projetos | Marcelo Gomes</title>
+  <style>
+    :root { --bg:#0f172a; --card:#111827; --text:#f8fafc; --muted:#cbd5e1; --accent:#38bdf8; --border:#334155; }
+    * { box-sizing: border-box; }
+    body { margin:0; font-family:Arial, Helvetica, sans-serif; background:linear-gradient(135deg,#0f172a,#111827); color:var(--text); line-height:1.6; }
+    header, footer { border-bottom:1px solid var(--border); background:rgba(15,23,42,.92); }
+    footer { border-top:1px solid var(--border); border-bottom:0; padding:32px 0; color:var(--muted); }
+    .container { max-width:1120px; margin:0 auto; padding:0 20px; }
+    .nav { display:flex; justify-content:space-between; align-items:center; padding:16px 0; }
+    a { color:var(--text); text-decoration:none; }
+    nav a { margin-left:18px; font-size:14px; }
+    main { padding:70px 0; }
+    h1 { font-size:clamp(36px,6vw,58px); line-height:1.05; margin:0 0 20px; }
+    h2 { margin:0 0 12px; }
+    p { color:var(--muted); }
+    .intro { max-width:760px; margin-bottom:38px; }
+    .grid { display:grid; grid-template-columns:1fr; gap:24px; }
+    .card { background:rgba(17,24,39,.85); border:1px solid var(--border); border-radius:24px; padding:26px; box-shadow:0 20px 45px rgba(0,0,0,.22); }
+    .tag { color:var(--accent); font-weight:700; text-transform:uppercase; font-size:12px; letter-spacing:1px; }
+    .meta { display:flex; flex-wrap:wrap; gap:8px; margin:18px 0; }
+    .chip { font-size:12px; padding:6px 10px; border-radius:999px; background:#1e293b; color:var(--muted); }
+    .btn { display:inline-block; margin-top:12px; padding:11px 16px; border:1px solid var(--border); border-radius:14px; font-weight:700; }
+    .btn.primary { background:var(--accent); color:#082f49; border-color:var(--accent); }
+    @media(max-width:700px){ nav{display:none;} main{padding:48px 0;} }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a href="index.html"><strong>Marcelo Gomes</strong></a>
+      <nav>
+        <a href="index.html">Início</a>
+        <a href="projetos.html">Projetos</a>
+        <a href="index.html#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <div class="intro">
+        <div class="tag">Projetos em destaque</div>
+        <h1>Projetos com foco em problema real, organização e aplicação prática.</h1>
+        <p>Esta página reúne os projetos principais do meu portfólio. A prioridade é mostrar não apenas tecnologias, mas também o problema resolvido, a solução proposta e o potencial de evolução de cada sistema.</p>
+      </div>
+      <section class="grid">
+        <article class="card">
+          <div class="tag">Jurídico e dashboards</div>
+          <h2>PeritoLex</h2>
+          <p><strong>Problema:</strong> informações jurídicas e rotinas de acompanhamento podem ficar espalhadas, dificultando controle de prazos, movimentações e prioridades.</p>
+          <p><strong>Solução:</strong> aplicação web para centralizar informações, apoiar análise visual e organizar dados relevantes para rotina jurídica e pericial.</p>
+          <div class="meta"><span class="chip">React</span><span class="chip">Vite</span><span class="chip">Dashboard</span><span class="chip">Organização jurídica</span></div>
+          <a class="btn primary" href="https://github.com/M4rc3low/peritolex" target="_blank" rel="noopener">Ver no GitHub</a>
+        </article>
+        <article class="card">
+          <div class="tag">Mapas, dados e operação</div>
+          <h2>GeoTerritórios</h2>
+          <p><strong>Problema:</strong> o controle territorial manual dificulta saber o que já foi feito, o que está pendente e quais áreas precisam de prioridade.</p>
+          <p><strong>Solução:</strong> sistema para organizar territórios, prédios, apartamentos e indicadores de cobertura, com base para mapas e relatórios.</p>
+          <div class="meta"><span class="chip">React</span><span class="chip">React Leaflet</span><span class="chip">Geodados</span><span class="chip">Recharts</span></div>
+          <a class="btn primary" href="https://github.com/M4rc3low/geoterritorios_marcelo" target="_blank" rel="noopener">Ver no GitHub</a>
+        </article>
+        <article class="card">
+          <div class="tag">Negócio real e presença digital</div>
+          <h2>AMM Materiais de Construção</h2>
+          <p><strong>Problema:</strong> negócios locais precisam de uma presença digital clara para apresentar produtos, contato e identidade profissional.</p>
+          <p><strong>Solução:</strong> projeto web para fortalecer a presença online da loja, com base para catálogo, atendimento e futuras integrações.</p>
+          <div class="meta"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Negócio real</span></div>
+          <a class="btn primary" href="https://github.com/M4rc3low/amm-materiais-construcao" target="_blank" rel="noopener">Ver no GitHub</a>
+        </article>
+      </section>
+    </div>
+  </main>
+  <footer><div class="container">© 2026 Marcelo Gomes. Portfólio em evolução contínua.</div></footer>
+</body>
+</html>
