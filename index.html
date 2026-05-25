@@ -6,125 +6,27 @@
   <meta name="description" content="Marcelo Serikawa Gomes - DevOps, Cybersecurity, Cloud, Automação e Sistemas Inteligentes.">
   <title>Marcelo Serikawa Gomes | DevOps • Cybersecurity • Cloud</title>
   <style>
-    :root {
-      --bg: #0f172a;
-      --card: #111827;
-      --text: #f8fafc;
-      --muted: #cbd5e1;
-      --accent: #38bdf8;
-      --border: #334155;
-    }
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(135deg, #020617, #0f172a, #111827);
-      color: var(--text);
-      line-height: 1.6;
-    }
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 10;
-      background: rgba(2, 6, 23, 0.92);
-      border-bottom: 1px solid var(--border);
-      backdrop-filter: blur(10px);
-    }
-    .container { max-width: 1180px; margin: 0 auto; padding: 0 20px; }
-    .nav { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; }
-    .nav a { color: var(--text); text-decoration: none; margin-left: 18px; font-size: 14px; }
-    .brand { font-weight: 700; letter-spacing: .5px; }
-    .hero { padding: 110px 0 90px; }
-    .hero-grid { display: grid; grid-template-columns: 1.3fr 0.7fr; gap: 36px; align-items: center; }
-    .tag { color: var(--accent); font-weight: 700; text-transform: uppercase; font-size: 13px; letter-spacing: 1px; }
-    h1 { font-size: clamp(40px, 7vw, 72px); line-height: 1.02; margin: 12px 0 20px; }
-    h2 { font-size: 30px; margin: 0 0 18px; }
-    h3 { margin: 0 0 10px; }
-    p { color: var(--muted); }
-    .highlight { color: var(--accent); }
-    .actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 28px; }
-    .btn {
-      display: inline-block;
-      padding: 12px 18px;
-      border-radius: 14px;
-      text-decoration: none;
-      color: var(--text);
-      border: 1px solid var(--border);
-      font-weight: 700;
-      transition: .2s ease;
-    }
-    .btn:hover { transform: translateY(-2px); }
-    .btn.primary { background: var(--accent); color: #082f49; border-color: var(--accent); }
-    .card {
-      background: rgba(17, 24, 39, 0.82);
-      border: 1px solid var(--border);
-      border-radius: 22px;
-      padding: 24px;
-      box-shadow: 0 20px 45px rgba(0,0,0,.25);
-    }
-    section { padding: 72px 0; border-top: 1px solid rgba(51,65,85,.5); }
-    .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
-    .skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-    .skill { padding: 16px; border: 1px solid var(--border); border-radius: 18px; background: rgba(15, 23, 42, 0.65); }
-    .project { min-height: 300px; display: flex; flex-direction: column; justify-content: space-between; }
-    .chips { display: flex; gap: 8px; flex-wrap: wrap; margin: 18px 0; }
-    .chip { font-size: 12px; padding: 6px 10px; background: #1e293b; border-radius: 999px; color: var(--muted); }
-    footer { padding: 32px 0; border-top: 1px solid var(--border); color: var(--muted); font-size: 14px; }
-    @media (max-width: 850px) {
-      .hero-grid, .grid, .skills { grid-template-columns: 1fr; }
-      .nav nav { display: none; }
-      .hero { padding-top: 70px; }
-    }
+    :root{--bg:#020617;--card:#0f172a;--text:#f8fafc;--muted:#cbd5e1;--accent:#38bdf8;--border:#334155;}
+    *{box-sizing:border-box} body{margin:0;font-family:Arial,Helvetica,sans-serif;background:linear-gradient(135deg,#020617,#0f172a,#111827);color:var(--text);line-height:1.6}
+    header{position:sticky;top:0;z-index:10;background:rgba(2,6,23,.92);border-bottom:1px solid var(--border);backdrop-filter:blur(10px)}
+    .container{max-width:1180px;margin:0 auto;padding:0 20px}.nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}.nav a{color:var(--text);text-decoration:none;margin-left:18px;font-size:14px}.brand{font-weight:700;letter-spacing:.5px}
+    .hero{padding:110px 0 90px}.hero-grid{display:grid;grid-template-columns:1.3fr .7fr;gap:36px;align-items:center}.tag{color:var(--accent);font-weight:700;text-transform:uppercase;font-size:13px;letter-spacing:1px}
+    h1{font-size:clamp(40px,7vw,72px);line-height:1.02;margin:12px 0 20px}h2{font-size:30px;margin:0 0 18px}h3{margin:0 0 10px}p{color:var(--muted)}.highlight{color:var(--accent)}
+    .actions{display:flex;gap:14px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;padding:12px 18px;border-radius:14px;text-decoration:none;color:var(--text);border:1px solid var(--border);font-weight:700;transition:.2s}.btn:hover{transform:translateY(-2px)}.btn.primary{background:var(--accent);color:#082f49;border-color:var(--accent)}
+    .card{background:rgba(15,23,42,.82);border:1px solid var(--border);border-radius:22px;padding:24px;box-shadow:0 20px 45px rgba(0,0,0,.25)}section{padding:72px 0;border-top:1px solid rgba(51,65,85,.5)}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.skills{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.skill{padding:18px;border:1px solid var(--border);border-radius:18px;background:rgba(15,23,42,.65)}.project{min-height:300px;display:flex;flex-direction:column;justify-content:space-between}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;margin:18px 0}.chip{font-size:12px;padding:6px 10px;background:#1e293b;border-radius:999px;color:var(--muted)}footer{padding:32px 0;border-top:1px solid var(--border);color:var(--muted);font-size:14px}
+    @media(max-width:850px){.hero-grid,.grid,.skills{grid-template-columns:1fr}.nav nav{display:none}.hero{padding-top:70px}}
   </style>
 </head>
 <body>
-  <header>
-    <div class="container nav">
-      <a class="brand" href="#home">Marcelo Serikawa Gomes</a>
-      <nav>
-        <a href="#sobre">Sobre</a>
-        <a href="#habilidades">Stack</a>
-        <a href="#projetos">Projetos</a>
-        <a href="trajetoria.html">Trajetória</a>
-        <a href="projetos.html">Detalhes</a>
-        <a href="#contato">Contato</a>
-      </nav>
-    </div>
-  </header>
-
-  <main id="home">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div>
-          <div class="tag">DevOps • Cybersecurity • Cloud • Automation</div>
-          <h1>Construindo <span class="highlight">sistemas inteligentes</span>, seguros e automatizados.</h1>
-          <p>Sou Marcelo Serikawa Gomes. Meu foco está em DevOps, Cybersecurity, Cloud Computing, automação operacional e construção de aplicações voltadas para problemas reais, produtividade e observabilidade.</p>
-          <div class="actions">
-            <a class="btn primary" href="#projetos">Explorar projetos</a>
-            <a class="btn" href="https://github.com/M4rc3low" target="_blank" rel="noopener">GitHub</a>
-            <a class="btn" href="https://www.linkedin.com/in/marcelo-s-gomes-019792389/" target="_blank" rel="noopener">LinkedIn</a>
-          </div>
-        </div>
-        <aside class="card">
-          <h3>Especialidades em construção</h3>
-          <p>Ecossistema focado em infraestrutura moderna, automação, cloud, dashboards operacionais, organização inteligente e segurança.</p>
-          <div class="chips">
-            <span class="chip">AWS</span>
-            <span class="chip">Docker</span>
-            <span class="chip">Linux</span>
-            <span class="chip">Cybersecurity</span>
-            <span class="chip">DevOps</span>
-            <span class="chip">Observabilidade</span>
-            <span class="chip">Dashboards</span>
-            <span class="chip">Automação</span>
-          </div>
-        </aside>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container">© 2026 Marcelo Serikawa Gomes • DevOps • Cybersecurity • Cloud</div>
-  </footer>
+<header><div class="container nav"><a class="brand" href="#home">Marcelo Serikawa Gomes</a><nav><a href="#sobre">Sobre</a><a href="#habilidades">Stack</a><a href="#projetos">Projetos</a><a href="infraestrutura.html">Infraestrutura</a><a href="trajetoria.html">Trajetória</a><a href="#contato">Contato</a></nav></div></header>
+<main id="home">
+<section class="hero"><div class="container hero-grid"><div><div class="tag">DevOps • Cybersecurity • Cloud • Automation</div><h1>Construindo <span class="highlight">sistemas inteligentes</span>, seguros e automatizados.</h1><p>Sou Marcelo Serikawa Gomes. Meu foco está em DevOps, Cybersecurity, Cloud Computing, automação operacional e construção de aplicações voltadas para problemas reais, produtividade e observabilidade.</p><div class="actions"><a class="btn primary" href="#projetos">Explorar projetos</a><a class="btn" href="infraestrutura.html">Ver infraestrutura</a><a class="btn" href="https://github.com/M4rc3low" target="_blank" rel="noopener">GitHub</a></div></div><aside class="card"><h3>Especialidades em construção</h3><p>Ecossistema focado em infraestrutura moderna, automação, cloud, dashboards operacionais, organização inteligente e segurança.</p><div class="chips"><span class="chip">AWS</span><span class="chip">Docker</span><span class="chip">Linux</span><span class="chip">Cybersecurity</span><span class="chip">DevOps</span><span class="chip">Observabilidade</span><span class="chip">Dashboards</span><span class="chip">Automação</span></div></aside></div></section>
+<section id="sobre"><div class="container"><h2>Sobre</h2><p>Minha marca técnica une desenvolvimento, infraestrutura e segurança. A proposta é criar soluções que reduzem trabalho manual, melhoram controle operacional e fortalecem ambientes digitais com automação, cloud, documentação e boas práticas.</p><p>Estou construindo uma base profissional voltada para DevOps e Cybersecurity, usando projetos reais como laboratório: dashboards, sistemas de organização, automações, deploys e ferramentas com foco em produtividade.</p></div></section>
+<section id="habilidades"><div class="container"><h2>Stack e direção técnica</h2><div class="skills"><div class="skill"><strong>DevOps</strong><p>Linux, Docker, GitHub, deploy, automação e fundamentos de CI/CD.</p></div><div class="skill"><strong>Cybersecurity</strong><p>Segurança operacional, logs, autenticação, hardening e monitoramento.</p></div><div class="skill"><strong>Cloud</strong><p>AWS, EC2, S3, escalabilidade, disponibilidade e arquitetura em nuvem.</p></div><div class="skill"><strong>Automação</strong><p>Python, Playwright, scripts, coleta de dados e redução de tarefas manuais.</p></div><div class="skill"><strong>Observabilidade</strong><p>Dashboards, métricas, relatórios, alertas e visão operacional.</p></div><div class="skill"><strong>Aplicações</strong><p>React, Vite, JavaScript, APIs, documentação e visão de produto.</p></div></div></div></section>
+<section id="projetos"><div class="container"><h2>Projetos em destaque</h2><div class="grid"><article class="card project"><div><div class="tag">Jurídico • Dashboard</div><h3>PeritoLex</h3><p>Aplicação web para organização e análise de informações jurídicas, com potencial para alertas, automação, controle de prazos e observabilidade operacional.</p><div class="chips"><span class="chip">React</span><span class="chip">Dashboard</span><span class="chip">Automação</span></div></div><a class="btn" href="https://github.com/M4rc3low/peritolex" target="_blank" rel="noopener">Abrir repositório</a></article><article class="card project"><div><div class="tag">Geodados • Operação</div><h3>GeoTerritórios</h3><p>Sistema para controle territorial, mapas, prédios, apartamentos e indicadores de cobertura, com visão de dados e produtividade operacional.</p><div class="chips"><span class="chip">Mapas</span><span class="chip">Dados</span><span class="chip">Dashboard</span></div></div><a class="btn" href="https://github.com/M4rc3low/geoterritorios_marcelo" target="_blank" rel="noopener">Abrir repositório</a></article><article class="card project"><div><div class="tag">Negócio • Web</div><h3>AMM Materiais</h3><p>Projeto web de negócio real, com base para presença digital, catálogo, atendimento e futuras integrações operacionais.</p><div class="chips"><span class="chip">Web</span><span class="chip">Negócio</span><span class="chip">Produto</span></div></div><a class="btn" href="https://github.com/M4rc3low/amm-materiais-construcao" target="_blank" rel="noopener">Abrir repositório</a></article></div><div class="actions"><a class="btn primary" href="projetos.html">Ver detalhes dos projetos</a></div></div></section>
+<section id="contato"><div class="container"><h2>Contato</h2><p>Aberto a networking, oportunidades, freelas e projetos envolvendo DevOps, Cloud, automação e segurança.</p><div class="actions"><a class="btn primary" href="mailto:mg.anjos1991@gmail.com">Enviar e-mail</a><a class="btn" href="https://github.com/M4rc3low" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://www.linkedin.com/in/marcelo-s-gomes-019792389/" target="_blank" rel="noopener">LinkedIn</a></div></div></section>
+</main><footer><div class="container">© 2026 Marcelo Serikawa Gomes • DevOps • Cybersecurity • Cloud</div></footer>
 </body>
 </html>
