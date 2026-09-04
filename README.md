@@ -4,28 +4,38 @@ Repositório do meu portfólio profissional publicado com GitHub Pages.
 
 ## Objetivo
 
-Apresentar meus principais projetos, habilidades e evolução como desenvolvedor, com foco em aplicações web, automação, dashboards, cloud, dados e soluções para problemas reais.
+Apresentar projetos, habilidades e evolução técnica com foco em **desenvolvimento de software, cloud, DevOps, automação, observabilidade e soluções para problemas reais**.
 
 ## Projetos em destaque
 
-- **PeritoLex**: aplicação web voltada para organização e análise de informações jurídicas.
-- **GeoTerritórios**: sistema para organização territorial, mapas, prédios, apartamentos e acompanhamento de cobertura.
-- **AMM Materiais de Construção**: projeto web para presença digital de uma loja de materiais de construção.
+- **PeritoLex** — organização de processos, prazos, documentos e alertas.
+- **GeoTerritórios** — organização territorial, mapas, endereços e indicadores de cobertura.
+- **AMM Materiais de Construção** — presença digital e ferramentas web aplicadas a um negócio real.
+- **AWS Monitoring Lab** — laboratório de monitoramento e observabilidade.
+- **Terraform AWS Lab** — infraestrutura versionada com Infrastructure as Code.
 
 ## Áreas de foco
 
 - Desenvolvimento web
-- React, Vite, Tailwind CSS
+- React, Vite e JavaScript
 - Python e automação
 - Dashboards e visualização de dados
-- Cloud, Docker e APIs
-- Organização de sistemas para negócios reais
+- AWS e arquitetura em nuvem
+- Docker e containers
+- Terraform e Infrastructure as Code
+- GitHub Actions e CI/CD
+- Monitoramento e observabilidade
+
+## Estrutura do portfólio
+
+O site é uma aplicação estática publicada via GitHub Pages e organizada em páginas dedicadas a projetos, infraestrutura, trajetória, soluções e posicionamento profissional.
 
 ## Links
 
 - GitHub: https://github.com/M4rc3low
-- LinkedIn: https://www.linkedin.com/in/marcelo-s-gomes-019792389/
+- Portfólio: https://m4rc3low.github.io
+- LinkedIn: https://www.linkedin.com/in/marcelo-s-gomes/
 
 ## Status
 
-Portfólio em evolução contínua.
+Portfólio em evolução contínua, atualizado conforme novos projetos e competências são consolidados.
