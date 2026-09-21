@@ -6,10 +6,11 @@ Repositório do meu portfólio profissional publicado com GitHub Pages.
 
 ## Objetivo
 
-Apresentar projetos, habilidades e evolução técnica com foco em **desenvolvimento de software, cloud, DevOps, automação, observabilidade e soluções para problemas reais**.
+Apresentar projetos, habilidades e evolução técnica com foco em **desenvolvimento de software web e mobile, Python, cloud, DevOps, automação, observabilidade e soluções para problemas reais**.
 
 ## Projetos em destaque
 
+- **Pioneiro Pro Mobile** — aplicativo local-first em Python/Flet com SQLite, geolocalização, testes e pipeline de release.
 - **PeritoLex** — organização de processos, prazos, documentos e alertas, com CI e containerização.
 - **GeoTerritórios** — organização territorial, mapas, endereços e indicadores de cobertura.
 - **Pioneiro Pro** — organização operacional, acompanhamento de atividades e produtividade.
@@ -19,6 +20,7 @@ Apresentar projetos, habilidades e evolução técnica com foco em **desenvolvim
 
 ## Áreas de foco
 
+- Desenvolvimento mobile com Python e Flet
 - Desenvolvimento web com React, Vite e JavaScript
 - Testes e validações automatizadas
 - Docker e containers
