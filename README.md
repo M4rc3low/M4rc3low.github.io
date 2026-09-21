@@ -10,6 +10,7 @@ Apresentar projetos, habilidades e evolução técnica com foco em **desenvolvim
 
 ## Projetos em destaque
 
+- **AgroControl** — plataforma modular com C#/.NET, Python/FastAPI, Java/Spring Boot, React, PostGIS, Docker/Kubernetes e CI/CD.
 - **Pioneiro Pro Mobile** — aplicativo local-first em Python/Flet com SQLite, geolocalização, testes e pipeline de release.
 - **PeritoLex** — organização de processos, prazos, documentos e alertas, com CI e containerização.
 - **GeoTerritórios** — organização territorial, mapas, endereços e indicadores de cobertura.
@@ -20,6 +21,7 @@ Apresentar projetos, habilidades e evolução técnica com foco em **desenvolvim
 
 ## Áreas de foco
 
+- Desenvolvimento backend com C#/.NET, Python/FastAPI e Java/Spring Boot
 - Desenvolvimento mobile com Python e Flet
 - Desenvolvimento web com React, Vite e JavaScript
 - Testes e validações automatizadas
