@@ -1,97 +1,75 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Projetos de Marcelo Gomes em desenvolvimento web, automação, dashboards, geodados e soluções para negócios reais.">
-  <title>Projetos | Marcelo Gomes</title>
-  <style>
-    :root { --bg:#0f172a; --card:#111827; --text:#f8fafc; --muted:#cbd5e1; --accent:#38bdf8; --border:#334155; }
-    * { box-sizing: border-box; }
-    body { margin:0; font-family:Arial, Helvetica, sans-serif; background:linear-gradient(135deg,#0f172a,#111827); color:var(--text); line-height:1.6; }
-    header, footer { border-bottom:1px solid var(--border); background:rgba(15,23,42,.92); }
-    footer { border-top:1px solid var(--border); border-bottom:0; padding:32px 0; color:var(--muted); }
-    .container { max-width:1120px; margin:0 auto; padding:0 20px; }
-    .nav { display:flex; justify-content:space-between; align-items:center; padding:16px 0; }
-    a { color:var(--text); text-decoration:none; }
-    nav a { margin-left:18px; font-size:14px; }
-    main { padding:70px 0; }
-    h1 { font-size:clamp(36px,6vw,58px); line-height:1.05; margin:0 0 20px; }
-    h2 { margin:0 0 12px; }
-    p { color:var(--muted); }
-    .intro { max-width:760px; margin-bottom:38px; }
-    .grid { display:grid; grid-template-columns:1fr; gap:24px; }
-    .card { background:rgba(17,24,39,.85); border:1px solid var(--border); border-radius:24px; padding:26px; box-shadow:0 20px 45px rgba(0,0,0,.22); }
-    .tag { color:var(--accent); font-weight:700; text-transform:uppercase; font-size:12px; letter-spacing:1px; }
-    .meta { display:flex; flex-wrap:wrap; gap:8px; margin:18px 0; }
-    .chip { font-size:12px; padding:6px 10px; border-radius:999px; background:#1e293b; color:var(--muted); }
-    .btn { display:inline-block; margin-top:12px; padding:11px 16px; border:1px solid var(--border); border-radius:14px; font-weight:700; }
-    .btn.primary { background:var(--accent); color:#082f49; border-color:var(--accent); }
-    @media(max-width:700px){ nav{display:none;} main{padding:48px 0;} }
-  </style>
-</head>
-<body>
-  <header>
-    <div class="container nav">
-      <a href="index.html"><strong>Marcelo Gomes</strong></a>
-      <nav>
-        <a href="index.html">Início</a>
-        <a href="projetos.html">Projetos</a>
-        <a href="index.html#contato">Contato</a>
-      </nav>
-    </div>
-  </header>
-  <main>
-    <div class="container">
-      <div class="intro">
-        <div class="tag">Projetos em destaque</div>
-        <h1>Projetos com foco em problema real, organização e aplicação prática.</h1>
-        <p>Esta página reúne os projetos principais do meu portfólio. A prioridade é mostrar não apenas tecnologias, mas também o problema resolvido, a solução proposta e o potencial de evolução de cada sistema.</p>
-      </div>
-      <section class="grid">
-        <article class="card">
-          <div class="tag">Plataforma multi-stack e cloud-native</div>
-          <h2>AgroControl</h2>
-          <p><strong>Problema:</strong> operações rurais modernas precisam integrar gestão, geodados, telemetria, inteligência, funcionamento offline e controle de acesso sem espalhar regras críticas por vários clientes.</p>
-          <p><strong>Solução:</strong> plataforma modular com C#/.NET como núcleo transacional, Python/FastAPI para inteligência, Java/Spring Boot para telemetria, React/TypeScript, PostgreSQL/PostGIS, observabilidade e Kubernetes.</p>
-          <div class="meta"><span class="chip">C#/.NET</span><span class="chip">Python</span><span class="chip">Java</span><span class="chip">PostGIS</span><span class="chip">Kubernetes</span><span class="chip">CodeQL</span></div>
-          <a class="btn primary" href="https://github.com/M4rc3low/AgroControl" target="_blank" rel="noopener">Ver no GitHub</a>
-        </article>
-        <article class="card">
-          <div class="tag">Python, mobile e local-first</div>
-          <h2>Pioneiro Pro Mobile</h2>
-          <p><strong>Problema:</strong> acompanhar atividades, horas, estudantes, revisitas, agenda e metas em ferramentas separadas dificulta a organização no dia a dia.</p>
-          <p><strong>Solução:</strong> aplicativo mobile local-first em Python/Flet, com SQLite, geolocalização opcional, alertas de proximidade, backup, relatórios, testes automatizados e pipeline de release.</p>
-          <div class="meta"><span class="chip">Python</span><span class="chip">Flet</span><span class="chip">SQLite</span><span class="chip">Pytest</span><span class="chip">GitHub Actions</span></div>
-          <a class="btn primary" href="https://github.com/M4rc3low/pioneiro-pro-mobile" target="_blank" rel="noopener">Ver no GitHub</a>
-        </article>
-        <article class="card">
-          <div class="tag">Jurídico e dashboards</div>
-          <h2>PeritoLex</h2>
-          <p><strong>Problema:</strong> informações jurídicas e rotinas de acompanhamento podem ficar espalhadas, dificultando controle de prazos, movimentações e prioridades.</p>
-          <p><strong>Solução:</strong> aplicação web para centralizar informações, apoiar análise visual e organizar dados relevantes para rotina jurídica e pericial.</p>
-          <div class="meta"><span class="chip">React</span><span class="chip">Vite</span><span class="chip">Dashboard</span><span class="chip">Organização jurídica</span></div>
-          <a class="btn primary" href="https://github.com/M4rc3low/peritolex-app" target="_blank" rel="noopener">Ver no GitHub</a>
-        </article>
-        <article class="card">
-          <div class="tag">Mapas, dados e operação</div>
-          <h2>GeoTerritórios</h2>
-          <p><strong>Problema:</strong> o controle territorial manual dificulta saber o que já foi feito, o que está pendente e quais áreas precisam de prioridade.</p>
-          <p><strong>Solução:</strong> sistema para organizar territórios, prédios, apartamentos e indicadores de cobertura, com base para mapas e relatórios.</p>
-          <div class="meta"><span class="chip">React</span><span class="chip">React Leaflet</span><span class="chip">Geodados</span><span class="chip">Recharts</span></div>
-          <a class="btn primary" href="https://github.com/M4rc3low/geoterritorios-marcelo-app" target="_blank" rel="noopener">Ver no GitHub</a>
-        </article>
-        <article class="card">
-          <div class="tag">Negócio real e presença digital</div>
-          <h2>AMM Materiais de Construção</h2>
-          <p><strong>Problema:</strong> negócios locais precisam de uma presença digital clara para apresentar produtos, contato e identidade profissional.</p>
-          <p><strong>Solução:</strong> projeto web para fortalecer a presença online da loja, com base para catálogo, atendimento e futuras integrações.</p>
-          <div class="meta"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span><span class="chip">Negócio real</span></div>
-          <a class="btn primary" href="https://github.com/M4rc3low/amm-materiais-construcao" target="_blank" rel="noopener">Ver no GitHub</a>
-        </article>
-      </section>
-    </div>
-  </main>
-  <footer><div class="container">© 2026 Marcelo Gomes. Portfólio em evolução contínua.</div></footer>
-</body>
-</html>
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="Galeria dos projetos de Marcelo Gomes: software, aplicações web/mobile, infraestrutura, observabilidade e automação."><title>Galeria de projetos | Marcelo Gomes</title>
+<style>
+:root{color-scheme:dark;--bg:#020617;--surface:#0f172a;--line:#24354b;--text:#f8fafc;--muted:#aec1d5;--accent:#38bdf8}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 75% -10%,#123451 0,transparent 44%),var(--bg);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.55}
+a{color:inherit;text-decoration:none}a:focus-visible{outline:2px solid var(--accent);outline-offset:4px}.container{width:min(1220px,calc(100% - 40px));margin:0 auto}
+header{border-bottom:1px solid var(--line);background:#07111fe8;position:sticky;top:0;z-index:2;backdrop-filter:blur(14px)}.nav{display:flex;justify-content:space-between;align-items:center;gap:16px;min-height:75px}.nav strong{letter-spacing:-.025em;font-size:18px}.nav-links{display:flex;gap:24px;color:#bfd3e5;font-size:14px}.nav a:hover,.project-link:hover{color:var(--accent)}
+.hero{padding:82px 0 63px;border-bottom:1px solid var(--line)}.kicker{font-size:11px;color:var(--accent);font-weight:800;letter-spacing:2px}.hero h1{max-width:850px;font-size:clamp(40px,6vw,74px);letter-spacing:-.055em;line-height:1.08;margin:17px 0 21px}.hero h1 em{font-style:normal;color:var(--accent)}.hero p{max-width:760px;font-size:17px;color:var(--muted);margin:0 0 26px}.notice{display:inline-flex;align-items:flex-start;gap:10px;max-width:820px;padding:12px 16px;border:1px solid #2b5169;border-radius:12px;background:#12304a70;color:#cde7f7;font-size:13px}.notice b{color:#8bddff}.shortcuts{display:flex;flex-wrap:wrap;gap:9px;margin-top:27px}.shortcuts a{padding:8px 13px;border:1px solid #32465d;border-radius:999px;color:#c5d8e7;font-size:13px}.shortcuts a:hover{border-color:var(--accent);color:var(--accent)}
+.group{padding:65px 0 4px;scroll-margin-top:90px}.section-head{display:flex;align-items:end;justify-content:space-between;gap:15px;padding-bottom:19px;border-bottom:1px solid var(--line);margin-bottom:25px}.section-head h2{margin:8px 0 0;font-size:clamp(27px,3vw,37px);letter-spacing:-.04em}.count{color:#8fa8bc;font-size:12px;letter-spacing:1.3px;white-space:nowrap}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}.project-card{min-width:0;overflow:hidden;background:linear-gradient(180deg,#122238,#0d192b);border:1px solid #2a4056;border-radius:18px;display:flex;flex-direction:column;transition:transform .2s,border-color .2s}.project-card:hover{transform:translateY(-3px);border-color:#48a4c9}.project-cover{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;background:#17283d;border-bottom:1px solid #2a4056}.project-body{padding:21px 20px 0;flex:1}.project-body .kicker{font-size:10px;letter-spacing:1.2px}.project-body h2{font-size:24px;line-height:1.2;letter-spacing:-.035em;margin:8px 0 12px}.project-body p{color:#bdd0df;margin:0;font-size:14px;min-height:68px}.chips{display:flex;flex-wrap:wrap;gap:7px;margin:18px 0 19px}.chip{font-size:11px;color:#cae1ee;border:1px solid #35536a;padding:4px 9px;border-radius:999px;background:#172f43}.project-link{display:flex;justify-content:space-between;gap:14px;align-items:center;padding:15px 20px;border-top:1px solid var(--line);font-size:13px;font-weight:750;color:#e1effa}
+footer{color:#8faabe;border-top:1px solid var(--line);margin-top:85px;padding:30px 0;font-size:13px}.footer-content{display:flex;flex-wrap:wrap;justify-content:space-between;gap:14px}
+@media(max-width:960px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.container{width:min(100% - 28px,1220px)}.nav-links{gap:12px;font-size:12px}.hero{padding:51px 0 43px}.hero p{font-size:15px}.grid{grid-template-columns:1fr;gap:16px}.group{padding-top:49px}.project-body p{min-height:0}.project-body{padding:19px 19px 0}.section-head h2{font-size:26px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.project-card{transition:none}}
+</style></head><body>
+<header><div class="container nav"><a href="index.html"><strong>Marcelo Gomes <span style="color:#38bdf8">/ Projects</span></strong></a><nav class="nav-links" aria-label="Navegação principal"><a href="index.html">Início</a><a href="projetos.html" aria-current="page">Projetos</a><a href="trajetoria.html">Trajetória</a><a href="index.html#contato">Contato</a></nav></div></header>
+<main><section class="hero"><div class="container"><span class="kicker">PORTFÓLIO VISUAL · SOFTWARE & INFRASTRUCTURE</span><h1>Projetos que saem<br>do código e <em>ganham forma.</em></h1><p>Aplicações, produtos e laboratórios apresentados por contexto, tecnologias e identidade visual. Repositórios que compartilham o mesmo produto utilizam uma capa em comum para evitar duplicidade.</p><div class="notice"><span aria-hidden="true">ⓘ</span><span><b>Transparência visual:</b> as artes abaixo são capas conceituais autorais, <b>não screenshots</b> das aplicações em execução. Capturas reais serão identificadas separadamente quando disponíveis.</span></div><nav class="shortcuts" aria-label="Categorias da galeria"><a href="#aplicacoes">Aplicações</a><a href="#infraestrutura">Infraestrutura</a><a href="#planejamento">Planejamento</a><a href="#portfolio-labs">Portfólio e labs</a></nav></div></section>
+<div class="container"><section class="group" id="aplicacoes"><div class="section-head"><div><span class="kicker">GALERIA DE PROJETOS</span><h2>Aplicações</h2></div><span class="count">09 CAPAS</span></div><div class="grid"><article class="project-card"><img class="project-cover" src="assets/projects/agrocontrol.svg" alt="Capa ilustrativa do projeto AgroControl" loading="lazy" width="1200" height="675"><div class="project-body"><span class="kicker">PLATAFORMA • AGRITECH</span><h2>AgroControl</h2><p>Plataforma modular para gestão rural, geodados, operação offline e serviços de inteligência.</p><div class="chips"><span class="chip">C#/.NET</span><span class="chip">Python</span><span class="chip">PostGIS</span></div><a class="project-link" href="https://github.com/M4rc3low/AgroControl" target="_blank" rel="noopener noreferrer">Explorar repositório <span aria-hidden="true">↗</span></a></div></article>
+<article class="project-card"><img class="project-cover" src="assets/projects/pioneiro-pro-mobile.svg" alt="Capa ilustrativa do projeto Pioneiro Pro Mobile" loading="lazy" width="1200" height="675"><div class="project-body"><span class="kicker">APP • PYTHON</span><h2>Pioneiro Pro Mobile</h2><p>Aplicativo em Python/Flet para horas, atividades, agenda, revisitas e relatórios.</p><div class="chips"><span class="chip">Python</span><span class="chip">Flet</span><span class="chip">SQLite</span></div><a class="project-link" href="https://github.com/M4rc3low/pioneiro-pro-mobile" target="_blank" rel="noopener noreferrer">Explorar repositório <span aria-hidden="true">↗</span></a></div></article>
+<article class="project-card"><img class="project-cover" src="assets/projects/pioneiro-pro-web.svg" alt="Capa ilustrativa do projeto Pioneiro Pro Web" loading="lazy" width="1200" height="675"><div class="project-body"><span class="kicker">WEB • PRODUTIVIDADE</span><h2>Pioneiro Pro Web</h2><p>Interface web para organizar estudantes, visitas, lembretes e indicadores.</p><div class="chips"><span class="chip">React</span><span class="chip">Vite</span><span class="chip">Recharts</span></div><a class="project-link" href="https://github.com/M4rc3low/pioneiro-pro-app" target="_blank" rel="noopener noreferrer">Explorar repositório <span aria-hidden="true">↗</span></a></div></article>
+<article class="project-card"><img class="project-cover" src="assets/projects/peritolex.svg" alt="Capa ilustrativa do projeto PeritoLex" loading="lazy" width="1200" height="675"><div class="project-body"><span class="kicker">WEB • JURÍDICO</span><h2>PeritoLex</h2><p>Controle de processos, prazos, documentos, alertas e visão operacional.</p><div class="chips"><span class="chip">React</span><span class="chip">Dashboard</span><span class="chip">CI</span></div><a class="project-link" href="https://github.com/M4rc3low/peritolex-app" target="_blank" rel="noopener noreferrer">Explorar repositório <span aria-hidden="true">↗</span></a></div></article>
+<article class="project-card"><img class="project-cover" src="assets/projects/geoterritorios.svg" alt="Capa ilustrativa do projeto GeoTerritórios" loading="lazy" width="1200" height="675"><div class="project-body"><span class="kicker">WEB • GEODADOS</span><h2>GeoTerritórios</h2><p>Organização de territórios, endereços, prédios e indicadores de cobertura.</p><div class="chips"><span class="chip">React</span><span class="chip">Leaflet</span><span class="chip">Mapas</span></div><a class="project-link" href="https://github.com/M4rc3low/geoterritorios-marcelo-app" target="_blank" rel="noopener noreferrer">Explorar repositório <span aria-hidden="true">↗</span></a></div></article>
+<article class="project-card"><img class="project-cover" src="assets/projects/amm-materiais.svg" alt="Capa ilustrativa do projeto AMM Materiais" loading="lazy" width="1200" height="675"><div class="project-body"><span class="kicker">SITE • NEGÓCIO REAL</span><h2>AMM Materiais</h2><p>Site de materiais de construção com catálogo, contato e calculadoras práticas.</p><div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">JavaScript</span></div><a class="project-link" href="https://github.com/M4rc3low/amm-materiais-construcao" target="_blank" rel="noopener noreferrer">Explorar repositório <span aria-hidden="true">↗</span></a></div></article>
+<article class="project-card"><img class="project-cover" src="assets/projects/horizonte-azul.svg" alt="Capa ilustrativa do projeto Horizonte Azul" loading="lazy" width="1200" height="675"><div class="project-body"><span class="kicker">SITE • COMÉRCIO</span><h2>Horizonte Azul</h2><p>Site de peixaria com catálogo, assistente Peixinho Azul e backend próprio.</p><div class="chips"><span class="chip">Node.js</span><span class="chip">SQLite</span><span class="chip">Web</span></div><a class="project-link" href="https://github.com/M4rc3low/siteHorizonteAzul" target="_blank" rel="noopener noreferrer">Explorar repositório <span aria-hidden="true">↗</span></a></div></article>
+<article class="project-card"><img class="project-cover" src="assets/projects/diario-leitura.svg" alt="Capa ilustrativa do projeto Diário de Leitura" loading="lazy" width="1200" height="675"><div class="project-body"><span class="kicker">APP • LEITURA</span><h2>Diário de Leitura</h2><p>Diário digital para organizar leituras, livros desejados e experiências literárias.</p><div class="chips"><span class="chip">JavaScript</span><span class="chip">Node.js</span><span class="chip">Capacitor</span></div><a class="project-link" href="https://github.com/M4rc3low/diario-de-leitura" target="_blank" rel="noopener noreferrer">Explorar repositório <span aria-hidden="true">↗</span></a></div></article>
+<article class="project-card"><img class="project-cover" src="assets/projects/relatorio-mensal.svg" alt="Capa ilustrativa do projeto Relatório Mensal" loading="lazy" width="1200" height="675"><div class="project-body"><span class="kicker">WEB • DADOS</span><h2>Relatório Mensal</h2><p>Painel web com autenticação e organização de dados de relatórios mensais.</p><div class="chips"><span class="chip">HTML</span><span class="chip">JavaScript</span><span class="chip">Supabase</span></div><a class="project-link" href="https://github.com/M4rc3low/relatorio-mensal" target="_blank" rel="noopener noreferrer">Explorar repositório <span aria-hidden="true">↗</span></a></div></article>
+
+
+
+
+
+</div></section>
+<section class="group" id="infraestrutura"><div class="section-head"><div><span class="kicker">GALERIA DE PROJETOS</span><h2>Infraestrutura</h2></div><span class="count">02 CAPAS</span></div><div class="grid">
+
+
+
+
+
+
+
+
+<article class="project-card"><img class="project-cover" src="assets/projects/aws-monitoring.svg" alt="Capa ilustrativa do projeto AWS Monitoring Lab" loading="lazy" width="1200" height="675"><div class="project-body"><span class="kicker">LAB • OBSERVABILIDADE</span><h2>AWS Monitoring Lab</h2><p>Laboratório local de observabilidade com Zabbix, Grafana e Docker Compose.</p><div class="chips"><span class="chip">Docker</span><span class="chip">Zabbix</span><span class="chip">Grafana</span></div><a class="project-link" href="https://github.com/M4rc3low/aws-monitoring-lab" target="_blank" rel="noopener noreferrer">Explorar repositório <span aria-hidden="true">↗</span></a></div></article>
+<article class="project-card"><img class="project-cover" src="assets/projects/terraform-aws.svg" alt="Capa ilustrativa do projeto Terraform AWS Lab" loading="lazy" width="1200" height="675"><div class="project-body"><span class="kicker">LAB • CLOUD</span><h2>Terraform AWS Lab</h2><p>Laboratório de provisionamento versionado com Terraform e validação por CI.</p><div class="chips"><span class="chip">Terraform</span><span class="chip">AWS</span><span class="chip">CI/CD</span></div><a class="project-link" href="https://github.com/M4rc3low/terraform-aws-lab" target="_blank" rel="noopener noreferrer">Explorar repositório <span aria-hidden="true">↗</span></a></div></article>
+
+
+
+</div></section>
+<section class="group" id="planejamento"><div class="section-head"><div><span class="kicker">GALERIA DE PROJETOS</span><h2>Em planejamento</h2></div><span class="count">02 CAPAS</span></div><div class="grid">
+
+
+
+
+
+
+
+
+
+
+<article class="project-card"><img class="project-cover" src="assets/projects/agro-operacional.svg" alt="Capa ilustrativa do projeto Agro Operacional" loading="lazy" width="1200" height="675"><div class="project-body"><span class="kicker">CONCEITO • AGRITECH</span><h2>Agro Operacional</h2><p>Produto em planejamento para talhões, máquinas, manutenção e estoque rural.</p><div class="chips"><span class="chip">MVP</span><span class="chip">Arquitetura</span><span class="chip">Agro</span></div><a class="project-link" href="https://github.com/M4rc3low/agro-operacional" target="_blank" rel="noopener noreferrer">Explorar repositório <span aria-hidden="true">↗</span></a></div></article>
+<article class="project-card"><img class="project-cover" src="assets/projects/painel-pericial.svg" alt="Capa ilustrativa do projeto Painel Pericial Update" loading="lazy" width="1200" height="675"><div class="project-body"><span class="kicker">DOCUMENTAÇÃO • HISTÓRICO</span><h2>Painel Pericial Update</h2><p>Repositório de documentação e histórico; ainda não possui aplicação executável.</p><div class="chips"><span class="chip">Documentação</span><span class="chip">Roadmap</span></div><a class="project-link" href="https://github.com/M4rc3low/painel-pericial-update" target="_blank" rel="noopener noreferrer">Explorar repositório <span aria-hidden="true">↗</span></a></div></article>
+
+</div></section>
+<section class="group" id="portfolio-labs"><div class="section-head"><div><span class="kicker">GALERIA DE PROJETOS</span><h2>Portfólio e aprendizagem</h2></div><span class="count">02 CAPAS</span></div><div class="grid">
+
+
+
+
+
+
+
+
+
+
+
+
+<article class="project-card"><img class="project-cover" src="assets/projects/portfolio.svg" alt="Capa ilustrativa do projeto Portfólio" loading="lazy" width="1200" height="675"><div class="project-body"><span class="kicker">SITE • GITHUB PAGES</span><h2>Portfólio</h2><p>Site profissional para apresentar experiências, soluções e projetos técnicos.</p><div class="chips"><span class="chip">HTML</span><span class="chip">CSS</span><span class="chip">GitHub Pages</span></div><a class="project-link" href="https://github.com/M4rc3low/M4rc3low.github.io" target="_blank" rel="noopener noreferrer">Explorar repositório <span aria-hidden="true">↗</span></a></div></article>
+<article class="project-card"><img class="project-cover" src="assets/projects/github-actions.svg" alt="Capa ilustrativa do projeto GitHub Actions Labs" loading="lazy" width="1200" height="675"><div class="project-body"><span class="kicker">LAB • APRENDIZAGEM</span><h2>GitHub Actions Labs</h2><p>Exercícios de workflows, testes, branches e integração contínua.</p><div class="chips"><span class="chip">Actions</span><span class="chip">Git</span><span class="chip">CI/CD</span></div><a class="project-link" href="https://github.com/M4rc3low/skills-test-with-actions" target="_blank" rel="noopener noreferrer">Explorar repositório <span aria-hidden="true">↗</span></a></div></article></div></section></div></main><footer><div class="container footer-content"><span>© 2026 Marcelo Gomes · Projeto, implementação e documentação</span><a href="https://github.com/M4rc3low" rel="noopener noreferrer" target="_blank">Explorar GitHub ↗</a></div></footer></body></html>

@@ -48,3 +48,15 @@ O repositório também inclui materiais de identidade visual, página 404, favic
 ## Status
 
 Portfólio em evolução contínua, atualizado conforme novos projetos e competências são consolidados.
+
+## Galeria visual de projetos
+
+A [galeria de projetos](https://m4rc3low.github.io/projetos.html) apresenta 15 capas ilustrativas originais para os 20 repositórios deste perfil (incluindo versões relacionadas e exercícios). As capas são **conceituais**, não capturas reais dos sistemas.
+
+| AgroControl | Pioneiro Pro Mobile | PeritoLex |
+|:--:|:--:|:--:|
+| [![Capa AgroControl](assets/projects/agrocontrol.svg)](https://github.com/M4rc3low/AgroControl) | [![Capa Pioneiro Pro Mobile](assets/projects/pioneiro-pro-mobile.svg)](https://github.com/M4rc3low/pioneiro-pro-mobile) | [![Capa PeritoLex](assets/projects/peritolex.svg)](https://github.com/M4rc3low/peritolex-app) |
+
+Outras capas: [GeoTerritórios](assets/projects/geoterritorios.svg) · [AMM](assets/projects/amm-materiais.svg) · [Horizonte Azul](assets/projects/horizonte-azul.svg) · [Diário de Leitura](assets/projects/diario-leitura.svg) · [Relatório Mensal](assets/projects/relatorio-mensal.svg) · [Infraestrutura](https://m4rc3low.github.io/projetos.html#infraestrutura).
+
+A nomenclatura e a finalidade de cada capa estão documentadas em [assets/projects/README.md](assets/projects/README.md). Capturas reais, quando feitas, devem permanecer em pasta separada e mostrar dados fictícios.
